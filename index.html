@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+  <title>Testimonial Sections using FLexbox | Frontend Mentor @muhaideennausar</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100%;
+      height: 100vh;
+      background-color: hsl(210, 46%, 95%);
+      position: relative;
+    }
+    .container{
+      width: 80%;
+      max-height: 100%;
+      display: flex;
+      margin: 0 150px;
+      padding: 100px 0;
+      align-items: center;
+/*      background-color: white;*/
+      gap: 25px;
+/*      box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.3) ;*/
+    }
+    .box{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      padding: 25px;
+      color: white;
+      gap: 20px;
+    }
+    .left{
+      max-width: 75%;
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .left-top{
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+      display: flex;
+      gap: 25px;
+    }
+    .top-left{
+      width: 70%;
+      height: 100%;
+      background-color: hsl(263, 55%, 52%);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+    .bg-quotation{
+      position: absolute;
+      top: 0;
+      right: 20%;
+    }
+    .top-right{
+      width: 30%;
+      background-color: hsl(217, 19%, 35%);
+      display: flex;
+      flex-direction: column;
+    }
+    .left-bottom{
+      width: 100%;
+      height: 50%;
+      gap: 25px;
+      display: flex;
+    }
+    .right{
+      max-width: 25%;
+      max-height: 100%;
+    }
+    .right-box{
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      color: hsl(217, 19%, 35%);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 20px 20px 40px hsla(219, 29%, 14%, 10%);
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+      mb
+    }
+    .profile-picture{
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, .5);
+      margin-right: 20px;
+    }
+    .picture-4{
+      border: 2px solid hsla(263, 55%, 52%);
+    }
+    .profile-name{
+      font-size: 15px;
+    }
+    .tag-line{
+      opacity: 50%;
+    }
+    .hero-para{
+      font-size: 1.3rem;
+      font-weight: 700;
+      z-index: 1;
+    }
+    .sub-para{
+      font-size: 15px;
+      opacity: 50%;
+      line-height: 1.5;
+    }
+    .bottom-left{
+      width: 30%;
+      background-color: white;
+      color: hsl(217, 19%, 35%);
+      display: flex;
+      flex-direction: column;
+      box-shadow: 20px 20px 40px hsla(219, 29%, 14%, 10%);
+    }
+    .bottom-right{
+      width: 70%;
+      background-color: hsl(219, 29%, 14%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+    .attribution{
+      width: 100%;
+      height: auto;
+      padding: 5px;
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+      background-color: black;
+    }
+    .attribution p{
+      color: rgba(255, 255, 255, .5);
+    }
+    .attribution a{
+      color: white;
+      font-weight: 900;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="left">
+      <section class="left-top">
+        <section class="top-left box">
+          <img class="bg-quotation" src="images/bg-pattern-quotation.svg">
+          <section class="profile">
+            <img class="profile-picture" src="images/image-daniel.jpg">
+            <p class="profile-name">Daniel Clifford<br><span class="tag-line">Verified Graduate</span></p>
+          </section>
+          <p class="hero-para">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</p>
+          <p class="sub-para">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition have heard some people who ha boxd an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+        </section>
+        <section class="top-right box">
+          <section class="profile">
+            <img class="profile-picture" src="images/image-jonathan.jpg">
+            <p class="profile-name">Jonathan Walters<br><span class="tag-line">Verified Graduate</span></p>
+          </section>
+          <p class="hero-para">The team was very supportive and kept me motivated</p>
+          <p class="sub-para">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+        </section>
+      </section>
+      <section class="left-bottom">
+        <section class="bottom-left box">
+          <section class="profile">
+            <img class="profile-picture" src="images/image-jeanette.jpg">
+            <p class="profile-name">Jeanette Harmon<br><span class="tag-line">Verified Graduate</span></p>
+          </section>
+          <p class="hero-para">An overall wonderful and rewarding experience</p>
+          <p class="sub-para">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+        </section>
+        <section class="bottom-right box">
+          <section class="profile">
+            <img class="profile-picture picture-4" src="images/image-patrick.jpg">
+            <p class="profile-name">Patrick Abrams<br><span class="tag-line">Verified Graduate</span></p>
+          </section>
+          <p class="hero-para">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</p>
+          <p class="sub-para">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+        </section>
+      </section>
+    </section>
+    <section class="right">
+      <section class="right-box box">
+        <section class="profile">
+          <img class="profile-picture" src="images/image-kira.jpg">
+          <p class="profile-name">Kira Whittle<br><span class="tag-line">Verified Graduate</span></p>
+        </section>
+        <p class="hero-para">Such a life-changing experience. Highly recommended!</p>
+        <p class="sub-para">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+      </section>
+    </section>
+  </main>
+ <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://frontendmentor.io/profile/muhaideennausar" target="_blank">Muhaideen Nausar</a>.
+    </p>
+  </div>
+</body>
+</html>
