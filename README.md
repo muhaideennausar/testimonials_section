@@ -4,6 +4,10 @@ This is my solution to the Testimonials Section challenge on Frontend Mentor. In
 
 ![Testimonials Section Preview](./screenshot.jpg)
 
+## Live Demo
+
+**Testimonials Section** - [**Click here**](https://testimonials-section-seven.vercel.app/)
+
 ## Challenge Description
 
 Frontend Mentor is a platform that offers web development challenges to help improve your coding skills. The Testimonials Section challenge is one of these challenges. The goal of this challenge is to build a testimonials section based on the given design. The challenge is focused on the desktop version, so responsiveness for mobile devices was not required for this particular project.
@@ -35,22 +39,3 @@ This challenge was a great opportunity to practice my HTML and CSS skills and to
 If you have any questions or feedback regarding my solution, please feel free to reach out.
 
 Happy coding! 😄🚀
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
